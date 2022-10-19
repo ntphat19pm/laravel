@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\home_controller; 
-use App\Http\Controllers\admin_controller; 
 
 /*
 |--------------------------------------------------------------------------
