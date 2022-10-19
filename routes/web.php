@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\home_controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/','home_controller@index')->name('home.index');
+Route::get('/', [home_controller::class, 'index'])->name('home.index');
+// Route::get('/','home_controller@index')->name('home.index');
 Route::get('/home','home_controller@home')->name('home.home');
 
 Route::get('/autocomplete','home_controller@autocomplete')->name('home.autocomplete');
